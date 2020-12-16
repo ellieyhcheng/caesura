@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100vw - 300px);
+  position: absolute;
+  left: 300px;
+  top: 0;
+  box-sizing: border-box;
+  padding: 1rem 4rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.header h2 {
+  margin: 0.5rem 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0 0.8rem;
+}
+
+.header p {
+  font-size: 1.4rem;
+}
