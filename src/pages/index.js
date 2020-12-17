@@ -1,11 +1,59 @@
 import React from "react"
-import { Link } from "gatsby"
-import Sidebar from '../components/sidebar'
-import Header from '../components/header'
+import { Link, graphql } from "gatsby"
+import Layout from '../components/layout'
+import SEO from "../components/seo"
+import Img from "gatsby-image"
 
-export default function Home() {
-  return <div>
-    <Sidebar></Sidebar>
-    <Header></Header>
-  </div>
+export default function Home({ data }) {
+  return <Layout>
+    <SEO />
+    <div>
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <div key={node.id} style={{ marginBottom: '0.5rem' }}>
+          <Link
+            to={node.fields.slug}>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <div style={{ width: '80px', marginRight: '2rem', marginTop:'1.5rem' }}><Img fluid={node.frontmatter.image.childImageSharp.fluid} /></div>
+              <div>
+                <h2 style={{ marginBottom: '0.5rem' }}>
+                  {node.frontmatter.title}{" "}
+                  <span style={{ fontSize: '0.9rem', marginLeft: '1rem' }}>
+                    [{node.frontmatter.date}]
+                  </span>
+                </h2>
+                <p>{node.excerpt}</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+      ))}
+    </div>
+  </Layout>
 }
+
+export const query = graphql`
+  query {
+    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+      edges {
+        node {
+          id
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            image {
+              childImageSharp {
+                fluid(maxWidth: 200) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          excerpt
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`

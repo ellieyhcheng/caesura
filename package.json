@@ -2,7 +2,7 @@
   "name": "caesura",
   "private": true,
   "description": "Poetry blog for Ellie Cheng",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
@@ -15,9 +15,15 @@
   },
   "dependencies": {
     "gatsby": "^2.26.1",
+    "gatsby-image": "^2.8.0",
+    "gatsby-plugin-react-helmet": "^3.7.0",
+    "gatsby-plugin-sharp": "^2.11.1",
     "gatsby-source-filesystem": "^2.8.0",
+    "gatsby-transformer-remark": "^2.13.0",
+    "gatsby-transformer-sharp": "^2.9.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "prettier": "2.1.2"

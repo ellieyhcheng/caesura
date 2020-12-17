@@ -1,10 +1,31 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: `Caesura - Ellie Cheng`,
+    description: `Poetry blog by Ellie Cheng`,
+    author: `Ellie Cheng`,
+  },
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      "resolve": `gatsby-transformer-remark`,
+      "options": {
+        "excerpt_separator": `<!-- end -->`
+      }
+    },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+  ],
 }
