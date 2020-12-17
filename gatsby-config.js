@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/caesura",
   siteMetadata: {
     title: `Caesura - Ellie Cheng`,
     description: `Poetry blog by Ellie Cheng`,
