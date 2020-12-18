@@ -2,18 +2,16 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Img from "gatsby-image"
 
 export default function Post({ data }) {
   const post = data.markdownRemark
-  let imageFluid = post.frontmatter.image.childImageSharp.fluid
 
   return (
     <Layout data={data}>
       <SEO title={post.frontmatter.title} description={post.excerpt} />
       <div>
         <div style={{ width: '60%', marginBottom: '2rem' }}>
-          <Img fluid={imageFluid} />
+          <img src={post.frontmatter.image.publicURL} alt={post.frontmatter.title} />
         </div>
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} style={{ whiteSpace: 'pre' }} />
@@ -32,11 +30,7 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         image {
-          childImageSharp {
-            fluid(maxWidth: 1000, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+          publicURL
         }
       }
       excerpt
