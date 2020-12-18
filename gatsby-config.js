@@ -28,5 +28,13 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-8X6YMYWB9S", // Google Analytics / GA
+        ],
+      },
+    },
   ],
 }
