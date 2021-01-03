@@ -39,11 +39,11 @@ module.exports = {
       options: {
         name: `Caesura - Ellie Cheng`,
         short_name: `Caesura`,
-        start_url: `/`,
+        start_url: `${__dirname}`,
         background_color: `#2f3133`,
         theme_color: `#ffffff`,
         display: `standalone`,
-        icon: `${__dirname}/static/logo.svg`,
+        icon: `${__dirname}/src/images/logo.svg`,
       },
     }
   ],
