@@ -34,5 +34,17 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Caesura - Ellie Cheng`,
+        short_name: `Caesura`,
+        start_url: `/`,
+        background_color: `#2f3133`,
+        theme_color: `#ffffff`,
+        display: `standalone`,
+        icon: `${__dirname}/static/logo.svg`,
+      },
+    }
   ],
 }
