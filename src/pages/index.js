@@ -12,9 +12,6 @@ export default function Home({ data }) {
           <Link
             to={node.fields.slug}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
-              <div style={{ width: '80px', marginRight: '2rem', marginTop:'1.5rem'}}>
-                <img src={node.frontmatter.image.publicURL} alt={node.frontmatter.title} />
-              </div>
               <div>
                 <h2 style={{ marginBottom: '0.5rem' }}>
                   {node.frontmatter.title}{" "}
@@ -41,9 +38,6 @@ export const query = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            image {
-              publicURL
-            }
           }
           excerpt
           fields {

@@ -1,7 +1,6 @@
 ---
 title: "agathokakological"
 date: "2020-12-16"
-image: ../images/agathokakological.png
 ---
 
 (adj.) composed of both good and evil<!-- end -->

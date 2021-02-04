@@ -40,18 +40,29 @@
   overflow-x: hidden;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.3rem 0;
+}
+
+.header p {
+  margin: 0;
+}
+
 .title {
   display: flex;
   align-items: center;
 }
 
 .title h2 {
-  margin: 0.5rem 2rem;
+  margin: 0rem 2rem;
 }
 
 .title h1 {
   font-size: 2.5rem;
-  margin: 0.5rem 0 0.7rem;
+  margin: 0rem 0 0.7rem;
 }
 
 .subtitle {
@@ -60,10 +71,12 @@
 
 .content p {
   font-size: 1.2rem;
+  letter-spacing: 0rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .content hr {
-  margin: 2rem 0 1.5rem;
+  margin: 0;
 }
 
 .text p {

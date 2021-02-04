@@ -10,9 +10,6 @@ export default function Post({ data }) {
     <Layout data={data}>
       <SEO title={post.frontmatter.title} description={post.excerpt} />
       <div>
-        <div style={{ width: '60%', marginBottom: '2rem' }}>
-          <img src={post.frontmatter.image.publicURL} alt={post.frontmatter.title} />
-        </div>
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} style={{ whiteSpace: 'pre' }} />
         <br/>
@@ -29,9 +26,6 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        image {
-          publicURL
-        }
       }
       excerpt
     }

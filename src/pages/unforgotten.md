@@ -1,7 +1,6 @@
 ---
 title: "unforgotten"
 date: "2021-01-03"
-image: ../images/unforgotten.png
 ---
 
 The first time we met<!-- end -->,

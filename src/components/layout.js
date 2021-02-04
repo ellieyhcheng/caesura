@@ -42,13 +42,16 @@ export default function Layout({ children, data }) {
         )}
     </div>
     <div className={layoutStyles.content}>
-      <div className={layoutStyles.title}>
-        <Link to='/'>
-          <h1>cæsura</h1>
-        </Link>
-        <h2>[suh·zyur·ah]</h2>
+      <div className={layoutStyles.header}>
+        <div className={layoutStyles.title}>
+          <Link to='/'>
+            <h1>cæsura</h1>
+          </Link>
+          <h2>[suh·zyur·ah]</h2>
+        </div>
+        <p className={layoutStyles.subtitle}>...writing words to let them go</p>
       </div>
-      <p className={layoutStyles.subtitle}>a picture is worth a thousand words</p>
+      <hr />
       <div className={layoutStyles.text}>
         {children}
       </div>
