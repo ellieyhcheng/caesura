@@ -49,7 +49,7 @@ export default function Layout({ children, data }) {
           </Link>
           <h2>[suh·zyur·ah]</h2>
         </div>
-        <p className={layoutStyles.subtitle}>...writing words to let them go</p>
+        <p className={layoutStyles.subtitle}>... writing words to let them go</p>
       </div>
       <hr />
       <div className={layoutStyles.text}>
