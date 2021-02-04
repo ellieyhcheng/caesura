@@ -3,7 +3,7 @@ title: "The Sun God"
 date: "2021-02-03"
 ---
 
-I was invited to visited the city of the Sun<!-- end -->
+I was invited to visit the city of the Sun<!-- end -->
 To see the austere Palace of gold and white,
 Where lights never dimmed and life never ended.
 As I cross the gilded gates,
@@ -38,7 +38,7 @@ The clouds part before me,
 As I set my gaze upon the grand doors
 Of the Palace of the Sun. Heralds draped in 
 The softest silk robes, trumpet my arrival.
-The Sun will see you know, says them.
+The Sun will see you now, says them.
 I peel back the ivory drapes
 Atop the gilt chaise,
 A leg strewn carelessly
