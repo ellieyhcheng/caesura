@@ -42,7 +42,7 @@ Hey, darling, will you just tell me what I'm looking for?
 What good is a bookmark in a book
 If all that remains are torn out pages?
 What good is ink on paper
-If rains falls upon it before or after?
+If rain falls upon it before or after?
 It tears us apart and puts us back together —
 This unforgotten, unremembered echo of mine
 Of you.
