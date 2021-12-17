@@ -15,6 +15,7 @@ const otherLinks = [
     name: 'LinkedIn',
     link: 'https://www.linkedin.com/in/yu-hsi-ellie-cheng/'
   },
+  { name: 'Publications', link: 'https://ellieyhcheng.github.io/publications' },
   { name: 'Resume', link: 'https://ellieyhcheng.github.io/YuHsi_Ellie_Cheng_Resume.pdf' },
 ]
 
