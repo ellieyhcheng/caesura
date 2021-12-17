@@ -124,6 +124,10 @@ a:hover {
     display: none;
   }
 
+  .subtitle {
+    display: none;
+  }
+
   .content {
     position: relative;
     left: 0;
